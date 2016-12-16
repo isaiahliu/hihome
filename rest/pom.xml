@@ -12,6 +12,7 @@
 	<name>hihome-rest</name>
 	<modules>
 		<module>account</module>
+		<module>security</module>
 	</modules>
 		<dependencies>
 		<dependency>
