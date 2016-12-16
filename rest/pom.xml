@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.trinity.hihome</groupId>
+		<artifactId>hihome</artifactId>
+		<version>0.0.1-DEV</version>
+	</parent>
+	<groupId>org.trinity.hihome.rest</groupId>
+	<artifactId>rest</artifactId>
+	<packaging>pom</packaging>
+	<name>hihome-rest</name>
+	<modules>
+		<module>account</module>
+	</modules>
+		<dependencies>
+		<dependency>
+			<groupId>org.trinity.framework.springboot</groupId>
+			<artifactId>web</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>spring-boot-starter-velocity</artifactId>
+					<groupId>org.springframework.boot</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.trinity.hihome</groupId>
+			<artifactId>process</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.trinity.hihome</groupId>
+			<artifactId>common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.trinity.hihome</groupId>
+			<artifactId>configuration</artifactId>
+		</dependency>
+	</dependencies>
+</project>
