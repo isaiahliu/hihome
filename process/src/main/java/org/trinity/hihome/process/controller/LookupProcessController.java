@@ -32,8 +32,7 @@ public class LookupProcessController implements ILookupProcessController {
 
     @Override
     public List<LookupDto> getLookupsByType(final String lookupType) {
-        final Class<? extends ILookupMessage<?>> lookupEnumClass = LookupParser
-                .parseLookupClass(LookupParser.parse(LookupType.class, lookupType));
+        final Class<? extends ILookupMessage<?>> lookupEnumClass = LookupParser.parse(LookupType.class, lookupType).getTargetType();
 
         if (lookupEnumClass == null || !lookupEnumClass.isEnum()) {
             return Collections.emptyList();
