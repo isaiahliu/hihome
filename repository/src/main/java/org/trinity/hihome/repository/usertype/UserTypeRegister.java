@@ -15,13 +15,13 @@ import org.trinity.hihome.common.message.lookup.UserStatus;
 import org.trinity.repository.type.MessageUserType;
 
 @TypeDefs({
-        @TypeDef(name = "RecordStatus", defaultForType = RecordStatus.class, typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.RecordStatus")),
-        @TypeDef(name = "Language", defaultForType = Language.class, typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.Language")),
-        @TypeDef(name = "LookupType", defaultForType = LookupType.class, typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.LookupType")),
-        @TypeDef(name = "SystemAttributeKey", defaultForType = SystemAttributeKey.class, typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.SystemAttributeKey")),
-        @TypeDef(name = "UserStatus", defaultForType = UserStatus.class, typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.UserStatus")),
-        @TypeDef(name = "TokenStatus", defaultForType = TokenStatus.class, typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.TokenStatus")),
-        @TypeDef(name = "AccessRight", defaultForType = AccessRight.class, typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.AccessRight")) })
+        @TypeDef(typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.RecordStatus"), defaultForType = RecordStatus.class),
+        @TypeDef(typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.Language"), defaultForType = Language.class),
+        @TypeDef(typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.LookupType"), defaultForType = LookupType.class),
+        @TypeDef(typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.SystemAttributeKey"), defaultForType = SystemAttributeKey.class),
+        @TypeDef(typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.UserStatus"), defaultForType = UserStatus.class),
+        @TypeDef(typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.TokenStatus"), defaultForType = TokenStatus.class),
+        @TypeDef(typeClass = MessageUserType.class, parameters = @Parameter(name = "class", value = "org.trinity.hihome.common.message.lookup.AccessRight"), defaultForType = AccessRight.class) })
 @MappedSuperclass
 public class UserTypeRegister {
 }
