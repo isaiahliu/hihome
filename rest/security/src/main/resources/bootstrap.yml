@@ -1,11 +1,11 @@
 spring:
   application:
-    name: hihome.user
+    name: hihome.security
   cloud:
     config:
       uri: http://localhost:60823
-      name: hihome.user
-      env: dev
+      name: hihome.security
+      env: ${spring.profiles.active}
 eureka: 
   instance: 
     nonSecurePort: 50001

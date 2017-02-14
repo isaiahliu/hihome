@@ -8,6 +8,12 @@
 	</parent>
 	<artifactId>account</artifactId>
 	<name>hihome-rest-account</name>
+	<dependencies>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
@@ -19,4 +25,13 @@
 			</plugin>
 		</plugins>
 	</build>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>4.3.4.RELEASE</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>

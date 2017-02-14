@@ -1,12 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.trinity.hihome.rest</groupId>
-    <artifactId>rest</artifactId>
-    <version>0.0.1-DEV</version>
-  </parent>
-  <artifactId>security</artifactId>
-  <name>hihome-rest-security</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.trinity.hihome.rest</groupId>
+		<artifactId>rest</artifactId>
+		<version>0.0.1-DEV</version>
+	</parent>
+	<artifactId>security</artifactId>
+	<name>hihome-rest-security</name>
+	<dependencies>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
@@ -18,4 +25,13 @@
 			</plugin>
 		</plugins>
 	</build>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>4.3.4.RELEASE</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
