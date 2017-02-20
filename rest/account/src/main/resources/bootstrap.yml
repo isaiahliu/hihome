@@ -5,7 +5,7 @@ spring:
     config:
       uri: http://localhost:60823
       name: hihome.account
-      env: {spring.profiles.active}
+      env: ${spring.profiles.active:dev}
 eureka: 
   instance: 
     nonSecurePort: 50001

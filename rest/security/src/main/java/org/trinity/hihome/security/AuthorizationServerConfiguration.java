@@ -13,11 +13,11 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 @EnableAuthorizationServer
 public class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
     @Autowired
-    private AuthenticationManager m;
+    private AuthenticationManager authenticationManager;
 
     @Override
     public void configure(final AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
-        endpoints.authenticationManager(m);
+        endpoints.authenticationManager(authenticationManager);
     }
 
     @Override

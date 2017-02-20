@@ -20,6 +20,8 @@
 		<module>configuration</module>
 		<module>batch</module>
 		<module>rest</module>
+		
+		<module>cloud</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
